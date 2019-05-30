@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoderGirl_MVCMovies.ViewModels.Movie
+namespace CoderGirl_MVCMovies.ViewModels.Movies
 {
     public class MovieCreateViewModel
     {
@@ -31,7 +31,7 @@ namespace CoderGirl_MVCMovies.ViewModels.Movie
 
         public void Persist()
         {
-            Models.Movie movie = new Models.Movie
+            Movie movie = new Movie
             {
                 Name = this.Name,
                 DirectorId = this.DirectorId,
